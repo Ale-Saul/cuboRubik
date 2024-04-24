@@ -19,6 +19,7 @@ Control de versiones: Se recomienda utilizar un sistema de control de versiones 
 5. Manual de uso
    4.1.Formato de codificación para cargar el estado de un cubo desde el archivo de texto
    El tipo de archivo que soporta el programa es el siguiente:
+   
     WYR
     YWB
     WBW
@@ -52,7 +53,7 @@ Control de versiones: Se recomienda utilizar un sistema de control de versiones 
          9. Mostrar Cubo de archivo
          10. Obtener soluciones suboptimas del cubo del archivo
          0. Salir
-6. Diseño e implementación
+7. Diseño e implementación
   5.1.Breve descripción de modelo del problema
    El modelo del Cubo Rubik está representado como un diccionario en Python, donde cada cara del cubo se representa como una matriz tridimensional. Por ejemplo:
    cube_model = {
@@ -71,7 +72,7 @@ Control de versiones: Se recomienda utilizar un sistema de control de versiones 
    "Indica el algoritmo utilizado para resolver el Cubo Rubik."
    "¿Qué estrategias heurísticas se emplean en el algoritmo A*?"
    "Describe el modelo del problema utilizado para representar el Cubo Rubik."
-7. Trabajo Futuro
+8. Trabajo Futuro
     6.1.Lista de tareas inconclusas y/o ideas para continuar con el proyecto
       Optimización del Algoritmo A*
       Interfaz Gráfica de Usuario (GUI)
