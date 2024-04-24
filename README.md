@@ -8,7 +8,6 @@ hasta el estado resuelto. Con una interfaz simple y eficiente, este solucionador
 del Cubo Rubik que buscan mejorar sus habilidades de resolución y comprender mejor los principios detrás de este desafiante rompecabezas.
 3. Requerimientos del entorno de programacion:
 El proyecto del Solucionador del Cubo Rubik 3x3 está desarrollado en Python y requiere un entorno de programación compatible con este lenguaje de programación. A continuación se detallan los requerimientos del entorno de programación necesarios para ejecutar y desarrollar el proyecto:
-
 Python: Se requiere Python 3.12.2 para ejecutar el solucionador del Cubo Rubik 3x3. Se recomienda utilizar la última versión estable de Python disponible.
 Bibliotecas de Python: El proyecto hace uso de ciertas bibliotecas de Python para el manejo de datos y la implementación del algoritmo A*. Asegúrese de tener instaladas las siguientes bibliotecas:
 heapq: Utilizada para implementar la cola de prioridad requerida por el algoritmo A*.
@@ -17,7 +16,7 @@ Ambiente virtual (opcional): Se recomienda utilizar un ambiente virtual para ais
 Editor de texto o entorno de desarrollo integrado (IDE): Se puede utilizar cualquier editor de texto o IDE compatible con Python para desarrollar el proyecto. Algunas opciones populares incluyen Visual Studio Code, PyCharm y Sublime Text.
 Control de versiones: Se recomienda utilizar un sistema de control de versiones como Git para gestionar el código fuente del proyecto y colaborar con otros desarrolladores. Asegúrese de tener Git instalado en su sistema y configurado correctamente.
 
-4. Manual de uso
+5. Manual de uso
    4.1.Formato de codificación para cargar el estado de un cubo desde el archivo de texto
    El tipo de archivo que soporta el programa es el siguiente:
     WYR
@@ -47,11 +46,13 @@ Control de versiones: Se recomienda utilizar un sistema de control de versiones 
          3. Mover cubo
          4. Resolver cubo
          5. Reiniciar cubo
-         6. Cargar cubo desde archivo
-         7. Resolver cubo de archivo
-         8. Mostrar Cubo de archivo
+         6. Obtener soluciones suboptimas
+         7. Cargar cubo desde archivo
+         8. Resolver cubo de archivo
+         9. Mostrar Cubo de archivo
+         10. Obtener soluciones suboptimas del cubo del archivo
          0. Salir
-5. Diseño e implementación
+6. Diseño e implementación
   5.1.Breve descripción de modelo del problema
    El modelo del Cubo Rubik está representado como un diccionario en Python, donde cada cara del cubo se representa como una matriz tridimensional. Por ejemplo:
    cube_model = {
@@ -70,7 +71,7 @@ Control de versiones: Se recomienda utilizar un sistema de control de versiones 
    "Indica el algoritmo utilizado para resolver el Cubo Rubik."
    "¿Qué estrategias heurísticas se emplean en el algoritmo A*?"
    "Describe el modelo del problema utilizado para representar el Cubo Rubik."
-6. Trabajo Futuro
+7. Trabajo Futuro
     6.1.Lista de tareas inconclusas y/o ideas para continuar con el proyecto
       Optimización del Algoritmo A*
       Interfaz Gráfica de Usuario (GUI)
