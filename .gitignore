@@ -1,0 +1,6 @@
+# Ignorar archivos de configuración específicos
+config.ini
+
+# Ignorar directorios de dependencias
+venv/
+node_modules/
