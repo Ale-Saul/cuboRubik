@@ -18,7 +18,7 @@ Editor de texto o entorno de desarrollo integrado (IDE): Se puede utilizar cualq
 Control de versiones: Se recomienda utilizar un sistema de control de versiones como Git para gestionar el código fuente del proyecto y colaborar con otros desarrolladores. Asegúrese de tener Git instalado en su sistema y configurado correctamente.
 
 4. Manual de uso
-4.1.Formato de codificación para cargar el estado de un cubo desde el archivo de texto
+   4.1.Formato de codificación para cargar el estado de un cubo desde el archivo de texto
    El tipo de archivo que soporta el programa es el siguiente:
     WYR
     YWB
@@ -40,17 +40,17 @@ Control de versiones: Se recomienda utilizar un sistema de control de versiones 
     GGB
   Tener en cuenta que primero debe ir la cara W, seguida de la Y, R, O, G y B. Igual el programa no aceptara que el cubo no tenga las piezas completas o que los centros esten cambiados
   igual que debe tener el archivo 18 lineas.
-4.2.Instrucciones para ejecutar el programa
-  Al iniciar el programa con el comando py main.py se mostrara un menu con las opciones que se tienen el menu e el siguiente:
-1. Mostrar cubo
-2. Desarmar cubo predeterminado
-3. Mover cubo
-4. Resolver cubo
-5. Reiniciar cubo
-6. Cargar cubo desde archivo
-7. Resolver cubo de archivo
-8. Mostrar Cubo de archivo
-0. Salir
+   4.2.Instrucciones para ejecutar el programa
+     Al iniciar el programa con el comando py main.py se mostrara un menu con las opciones que se tienen el menu e el siguiente:
+         1. Mostrar cubo
+         2. Desarmar cubo predeterminado
+         3. Mover cubo
+         4. Resolver cubo
+         5. Reiniciar cubo
+         6. Cargar cubo desde archivo
+         7. Resolver cubo de archivo
+         8. Mostrar Cubo de archivo
+         0. Salir
 5. Diseño e implementación
   5.1.Breve descripción de modelo del problema
    El modelo del Cubo Rubik está representado como un diccionario en Python, donde cada cara del cubo se representa como una matriz tridimensional. Por ejemplo:
@@ -70,7 +70,7 @@ Control de versiones: Se recomienda utilizar un sistema de control de versiones 
    "Indica el algoritmo utilizado para resolver el Cubo Rubik."
    "¿Qué estrategias heurísticas se emplean en el algoritmo A*?"
    "Describe el modelo del problema utilizado para representar el Cubo Rubik."
-   6. Trabajo Futuro
+6. Trabajo Futuro
     6.1.Lista de tareas inconclusas y/o ideas para continuar con el proyecto
       Optimización del Algoritmo A*
       Interfaz Gráfica de Usuario (GUI)
