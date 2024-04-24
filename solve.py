@@ -1,6 +1,6 @@
 from cube import Cube
 import heapq
-from collections import deque
+from random import shuffle
 
 allowed_moves_edges = ['U', 'CU', 'D', 'CD', 'L', 'CL', 'R', 'CR', 'F', 'CF', 'B', 'CB']
 layer_edges =  [('U', 'F'), ('U', 'R'), ('U', 'L'), ('U', 'B'), ('D', 'F'), ('D', 'R'), ('D', 'L'), ('D', 'B'), ('F', 'R'), ('F', 'L'), ('B', 'R'), ('B', 'L')]
@@ -77,6 +77,34 @@ def solve_combined(cube):
             heapq.heappush(open_set, (new_estimate, new_cost, successor, [move] + path))
 
     return None
+
+
+def solve_combined_with_threshold(cube, threshold):
+    open_set = []
+    heapq.heappush(open_set, (heuristic_combined(cube), 0, cube, []))
+    visited = set()
+
+    solutions = []
+    while open_set:
+        current_estimate, current_cost, current_cube, path = heapq.heappop(open_set)
+
+        if heuristic_combined(current_cube) == 0:  
+            solutions.append(path)
+            if len(solutions) == threshold:
+                break
+        
+        if current_cube in visited:
+            continue
+        visited.add(current_cube)
+
+        successors = generate_successors(current_cube, allowed_moves_edges, path[-1] if path else None)
+        shuffle(successors) 
+        for successor, move in successors:
+            new_cost = current_cost + 1
+            new_estimate = new_cost + heuristic_combined(successor)
+            heapq.heappush(open_set, (new_estimate, new_cost, successor, [move] + path))
+
+    return solutions
 
 """ def heuristic_phase_1(cube):
     incorrect_edges = 0
